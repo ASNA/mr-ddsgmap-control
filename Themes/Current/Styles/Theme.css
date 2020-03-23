@@ -1,0 +1,331 @@
+@media screen {
+    body {
+        font-family: 'Lucida Grande', 'Lucida Sans Unicode', Helvetica, Arial, Verdana, sans-serif;
+        margin:0;
+        margin-left: 0.5em;
+        margin-right: 0.5em;
+    }
+
+    fieldset {
+        border:0;
+    }
+
+    .DdsBar {
+        width: 100%;
+        min-height: 2.8em;
+        z-index:1000;
+        background-color: maroon;
+        background-image: -webkit-linear-gradient(#800000, #CC0000);
+    }
+
+    .DdsPanel{
+        border-radius: 10px; border-style:solid; border-color:black; border-width:2px; padding:2px;
+        background-color:white;
+    }
+
+    .PanelTitle, .PanelTitle_OutputOnly {
+        font-size: 1em;
+        font-weight: bold;
+        color: White;
+        text-shadow: rgba(0, 0, 0, 0.6) 0px -1px 0;
+        text-overflow: ellipsis;
+        text-decoration: none;
+        white-space: nowrap;
+        vertical-align:middle;
+        text-align: center;
+        line-height:2.2em;
+    }
+
+    .DdsRecord {
+        width: 480px;  /* Visual Studio Designer workaround (to show phone width)*/
+        margin-left: 0px;
+        margin-top: 0px;
+        display: block;
+    }
+
+    .NavButton, .NavButtonIcon, .NavButtonSymbol {
+        width: auto;
+        height: 2.8em;
+        margin-top: 0.2em;
+        padding: 0 5px;
+        overflow: hidden;
+        line-height: 28px;
+        font-family: inherit;
+        font-size: 0.8em;
+        font-weight: bold;
+        text-shadow: rgba(0, 0, 0, 0.6) 0px -1px 0;
+        text-overflow: ellipsis;
+        text-decoration: none;
+        text-align: center;
+        white-space: nowrap;
+        color: #fff;
+        background:  rgb(37,141,200); /* Old browsers. VS Designer */
+        background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #8ea4c1), color-stop(0.5, #5877a2), color-stop(0.5, #476999), color-stop(1, #4a6c9b));
+        background-image: -ms-linear-gradient(top, #B5C1C0 0%, #12A1F3 50%, #1230EF 100%);
+        -webkit-border-radius: 6px;
+        border-radius:6px;
+        border: 1px solid #45505d;
+        vertical-align:middle;
+    }
+
+    .NavButton { /* Short text should have a min. width to be touchable */
+        min-width: 4em;
+    }
+
+    .NavButtonSymbol { /* One-letter text should have a min. width to be touchable  (narrower than NavButton) */
+        min-width: 3em;
+    }
+
+    .SubmitButton {
+        min-width: 4em;
+        font-size: 0.8em;
+        font-weight: bold;
+        height: 2.8em;
+        border-radius:6px;
+        border: 1px solid rgb(180,223,91);
+        color: #fff;
+        background: rgb(41,154,11); /* Old browsers. VS Designer */
+        background: -moz-linear-gradient(top,  rgba(41,154,11,1) 0%, rgba(41,154,11,1) 100%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(41,154,11,1)), color-stop(100%,rgba(41,154,11,1))); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(top,  rgba(41,154,11,1) 0%,rgba(41,154,11,1) 100%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(top,  rgba(41,154,11,1) 0%,rgba(41,154,11,1) 100%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(top,  rgba(41,154,11,1) 0%,rgba(41,154,11,1) 100%); /* IE10+ */
+        background: linear-gradient(to bottom,  rgba(41,154,11,1) 0%,rgba(41,154,11,1) 100%); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#299a0b', endColorstr='#299a0b',GradientType=0 ); /* IE6-9 */
+    }
+
+    .importantLabel {
+        font-size: 2em;
+    }
+
+    .DdsChartPanel {
+        margin-left: 0.2em;
+        margin-right: 0.2em;
+        border-color: black;
+        border-style: solid;
+        border-width: 0.1em;
+    }
+
+    .DdsList 
+    {
+        position:relative; 
+        left:0%;
+        font-weight:bold;
+    }
+    
+    .DdsListList
+    {
+        position:relative;
+        left:2%;
+        width:96%;
+        background-color:white;
+        border-radius: 10px; border-style:solid; border-color:black; border-width:2px; padding:2px;
+    }
+    
+    .DdsListList.table
+    {
+        width:100%;
+    }
+
+    .DdsListDetail
+    {
+        font-weight:normal;        
+    }
+
+    .DdsListImage
+    {
+        width:64px;
+        height:64px;
+    }
+
+    .DdsListChevron
+    {
+        padding-left:16px;
+        padding-right:16px;
+        /*
+          background-image:url(../Images/chevron.gif);
+          background-repeat:no-repeat;
+          background-position:center;
+          color:transparent; 
+        */
+    }
+
+    .SignOnButton, .RightAlignButton {
+        float:right;
+    }
+
+    .SmallFont {
+        font-size:0.8em;
+    }
+
+    .CenteredText {
+        text-align:center;
+        margin:0;
+    }
+}
+
+@media screen and (max-width:5000px) { /* All (except Visual Studio Web Form Designer) */
+
+    .DdsRecord {
+        width: 100%;
+    }
+
+    .DdsBar {
+        min-height: 4.4em;
+    }
+
+    .PanelTitle, .PanelTitle_OutputOnly {
+        font-size: 1.5em;
+        line-height: 2.7em;
+    }
+
+    .NavButton, .NavButtonIcon, .NavButtonSymbol {
+        height: 3.3em;
+        margin-top: 0.7em;
+    }
+
+    .NavButton { /* Short text should have a min. width to be touchable */
+        min-width: 4.5em;
+    }
+
+    .NavButtonSymbol { /* One-letter text should have a min. width to be touchable  (narrower than NavButton) */
+        min-width: 3.5em;
+    }
+
+    .SubmitButton {
+        min-width: 4.5em;
+        font-size: 1.3em;
+        height: 3.3em;
+    }
+
+    .DdsCharField, .DdsCharField_Link, .DdsCharField_Error, .DdsCharField_OutputOnly, .DdsCharField_Right, .DdsCharField_Right_Error, .DdsCharField_Right_OutputOnly {
+        /* Default font-size and height changed here.*/
+        font-size: 1em;
+        /*height: 1.0em;*/
+        padding: 2px;
+        font-weight: 200;
+    }
+
+    .DdsDecField , .DdsDecField_OutputOnly  {
+        font-size: 1.5em;
+        height: 2.0em;
+        padding: 2px;
+    }
+
+    .DdsConstant, .DdsConstant_Right  {
+        font-size: 1.5em;
+        height: 2.0em;
+    }
+}
+
+@media screen and (max-width:641px) {   /* Phones */
+
+    .DdsBar {
+        min-height: 2.8em;
+    }
+
+    .PanelTitle, .PanelTitle_OutputOnly {
+        font-size: 1.0em;
+        line-height: 2.2em;
+    }
+
+    .PanelTitle, .PanelTitle_OutputOnly {
+        font-size: 1em;
+        font-weight: bold;
+        color: White;
+        text-shadow: rgba(0, 0, 0, 0.6) 0px -1px 0;
+        text-overflow: ellipsis;
+        text-decoration: none;
+        white-space: nowrap;
+        vertical-align:middle;
+        text-align: center;
+        line-height:2.2em;
+    }
+
+    .NavButton, .NavButtonIcon, .NavButtonSymbol {
+        height: 2.8em;
+        margin-top: 0.2em;
+    }
+
+    .NavButton { /* Short text should have a min. width to be touchable */
+        min-width: 4em;
+    }
+
+    .NavButtonSymbol { /* One-letter text should have a min. width to be touchable  (narrower than NavButton) */
+        min-width: 3em;
+    }
+
+    .SubmitButton {
+        min-width: 4em;
+        font-size: 0.8em;
+        height: 2.8em;
+    }
+
+    .DdsCharField, .DdsCharField_Link, .DdsCharField_Error, .DdsCharField_OutputOnly, .DdsCharField_Right, .DdsCharField_Right_Error, .DdsCharField_Right_OutputOnly {
+        font-size:1.0em;
+        height: 1.5em;
+        padding: 2px;
+    }
+
+    .DdsDecField , .DdsDecField_OutputOnly  {
+        font-size:1.0em;
+        height: 1.5em;
+        padding: 2px;
+    }
+
+    .DdsConstant, .DdsConstant_Right  {
+        font-size:1.0em;
+        height: 1.5em;
+    }
+}
+
+
+/* Custom CSS to make the app look more modern. */
+
+.DdsListList {
+    border-radius: 0;
+    border-width: 1px;
+    border-color: silver;
+}
+
+svg {
+    width: 16px !important;
+    height: 16px !important;
+}
+
+.NavButton {
+    background-image: none;
+    background-color: black;
+    border-radius: 0;
+    border-color: gray;
+}
+
+.left-most-button {
+    margin-left: 1.5em;
+    margin-bottom: .5em;
+    margin-top: 1em;
+
+}
+
+.DdsBar {
+    background-image: none;
+    background-color: #004477;
+}
+
+div.DdsListList table tr:nth-child(odd) {
+    background-color: #e8e8e8;
+}
+
+div.DdsListList table {
+    border-spacing: 0;
+    border-collapse: separate;
+}
+
+.small-text {
+    font-size: 80%;
+}
+
+/* Remove rounded edges from character input fields. */
+.DdsCharField, .DdsCharField_Link, .DdsCharField_Error, .DdsCharField_OutputOnly, .DdsCharField_Right, .DdsCharField_Right_Error, .DdsCharField_Right_OutputOnly {
+    -webkit-border-radius: 0px;
+}

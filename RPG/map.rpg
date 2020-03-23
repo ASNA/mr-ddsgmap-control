@@ -1,0 +1,41 @@
+     H DftActGrp(*No)
+
+     FMAP       CF   E             WORKSTN Handler('MOBILERPG')
+     F                                     SFile(MAPSBF:MAPRRN)
+     F                                     Infds(infds)
+
+      /copy RPMRDATA/QRPGLESRC,KeyMap
+
+     D MAPRRN          S              4P 0
+
+      /free
+        AddrTo = 'San Antonio, TX';
+        AddrFm = 'Marion, IN';
+        ExSr ShowMap;
+        Exfmt HomeMenu;
+
+        Dow KeyPressed <> F03;
+            If KeyPressed = F10;
+                ExSr ShowMap;
+            EndIf;
+            Exfmt HomeMenu;
+        EndDo;
+
+        *INLR = *ON;
+        Return;
+
+        BegSr ShowMap;
+           *IN99 = *ON;
+           Write MAPCTRL;
+
+           MapRRN = 1;
+           Location = AddrFm;
+           Write MAPSBF;
+
+           MapRRN = 2;
+           Location = AddrTo;
+           Write MAPSBF;
+
+           *IN99 = *Off;
+           Write MAPCTRL;
+        EndSr;

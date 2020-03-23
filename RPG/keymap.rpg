@@ -1,0 +1,37 @@
+     D Infds           DS
+     D   KeyPressed          369    369
+     D   Cursor              370    371B 0
+      *
+      * Function keys
+     D F01             C                   x'31'
+     D F02             C                   x'32'
+     D F03             C                   x'33'
+     D F04             C                   x'34'
+     D F05             C                   x'35'
+     D F06             C                   x'36'
+     D F07             C                   x'37'
+     D F08             C                   x'38'
+     D F09             C                   x'39'
+     D F10             C                   x'3a'
+     D F11             C                   x'3b'
+     D F12             C                   x'3c'
+     D F13             C                   x'b1'
+     D F14             C                   x'b2'
+     D F15             C                   x'b3'
+     D F16             C                   x'b4'
+     D F17             C                   x'b5'
+     D F18             C                   x'b6'
+     D F19             C                   x'b7'
+     D F20             C                   x'b8'
+     D F21             C                   x'b9'
+     D F22             C                   x'ba'
+     D F23             C                   x'bb'
+     D F24             C                   x'bc'
+      * Other attention keys
+     D CLEAR_KEY       C                   x'bD'
+     D ENTER           C                   x'f1'
+     D HELP            C                   x'f3'
+     D PAGEUP          C                   x'f4'
+     D PAGEDOWN        C                   x'f5'
+     D PRINT_KEY       C                   x'f6'
+     D AUTO_ENTER      C                   x'50'
